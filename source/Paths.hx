@@ -370,11 +370,8 @@ class Paths
 		}
 		#end
 		// I hate this so god damn much
-<<<<<<< HEAD
 		var gottenPath:String = SUtil.getPath() + getPath('$path/$key.$SOUND_EXT', SOUND, library);	
-=======
 		var gottenPath:String = getPath('$path/$key.$SOUND_EXT', SOUND, library);
->>>>>>> 8e1cde1a39135c749f2f98122e494677f7b0b4f6
 		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
 		// trace(gottenPath);
 		if(!currentTrackedSounds.exists(gottenPath))
@@ -441,9 +438,7 @@ class Paths
 				return fileToCheck;
 			}
 		}
-<<<<<<< HEAD
 		return SUtil.getPath() + 'mods/' + key;
-=======
 
 		for(mod in getGlobalMods()){
 			var fileToCheck:String = mods(mod + '/' + key);
@@ -452,7 +447,6 @@ class Paths
 
 		}
 		return 'mods/' + key;
->>>>>>> 8e1cde1a39135c749f2f98122e494677f7b0b4f6
 	}
 
 	public static var globalMods:Array<String> = [];
